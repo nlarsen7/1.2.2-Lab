@@ -1,13 +1,21 @@
 package main
 
-import "fmt"
+import"fmt"
 
 func main() {
-fmt.Print("This is Math Magic!!")
-var answer= 37
-var factor= 99-answer
-fmt.Print("enter a number between 50-99")
-var guess= factor
+ var answer float64=37
+ fmt.Print("choose a number between 50 and 99") 
+ var user float64
+ fmt.Scanf("%f",&user)
 
+ var factor float64=99-answer
+ var guess float64= factor + user
+ 
+ var magic float64= user - ((guess-100)+1) 
+
+ fmt.Println(magic)
+
+ 
+ 
 
 }
